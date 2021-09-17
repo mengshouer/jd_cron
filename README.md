@@ -10,15 +10,13 @@ npm i node-schedule
 
 2. 复制一份cron_config.js.example修改为cron_config.js，并按照自己需求修改相应内容
 
-3. 将jd脚本的目录复制到当前目录下
-
-4. 获取定时数据文件(每次有新的定时脚本都得重新运行一遍)
+3. 获取定时数据文件(每次有新的定时脚本都得重新运行一遍)
 
 ```nodejs
 node cron_get.js
 ```
 
-5. 开启定时任务(定时数据文件更新需重新运行)
+4. 开启定时任务(定时数据文件更新需重新运行)
 
 ```nodejs
 node cron_run.js
