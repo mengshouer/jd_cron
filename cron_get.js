@@ -6,7 +6,7 @@ fs.readdir(mainDir, (err, files) => {
   const cron_data = {};
   files.forEach(file => {
     if (file.endsWith('.js')) {
-      let data = fs.readFileSync(mainDir + file, 'utf-8');
+      let data = fs.readFileSync(`${mainDir}/${file}`, 'utf-8');
       const lines = data.toString('utf-8').split('\n');
       let r = lines.filter(line => {
         if (line.includes(file) ? line.includes('*') : false) {
