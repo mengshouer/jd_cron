@@ -1,9 +1,10 @@
+const path = require('path');
 // 主京东脚本运行目录，带有cookie配置文件的目录，默认faker2 
-// PS: "./"指当前目录  './faker2/'指当前目录下的faker2目录，最后的/不能漏
-const mainDir = './faker2/';
+// PS: "./"指当前目录  './faker2'指当前目录下的faker2目录
+const mainDir = path.resolve('./faker2');
 
 // 日志输出目录
-const logspath = './cron_logs/';
+const logspath = path.resolve('./cron_logs');
 
 // 额外的定时任务，按照对象格式添加
 const extendData = {
