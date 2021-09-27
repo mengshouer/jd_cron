@@ -20,7 +20,7 @@ fs.readdir(mainDir, (err, files) => {
           cron = result[1].replace(/\"/g, '');
         }else{
           const reg = new RegExp(file);
-          cron = r[0].replace(/\/\//,"").replace(/cron/, "").replace(/script-path.*/, "").replace(/\"/g, "").replace(/^\s+/,"").replace(/, tag.*/, "").replace(/jd.*\.js/, "").replace(/http.*\.js/, "").replace(/[\u4e00-\u9fa5]/g,"").replace(reg, "").replace(/\s+$/, "");
+          cron = r[0].replace(/\/\//,"").replace(/cron/, "").replace(/script-path.*/, "").replace(/\"/g, "").replace(/^\s+/,"").replace(/, tag.*/, "").replace(/http.*\.js/, "").replace(/jd.*\.js/, "").replace(/[\u4e00-\u9fa5]/g,"").replace(reg, "").replace(/\s+$/, "");
         }
         cron_data[file] = cron;
       }
