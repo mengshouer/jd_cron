@@ -8,7 +8,7 @@ const logspath = path.resolve('./cron_logs');
 
 // 额外的定时任务，按照对象格式添加
 const extendData = {
-  'jd_try_xh.js' : '5 8 * * *',
+  //'jd_try_xh.js' : '5 8 * * *',
 }
 
 module.exports = {
